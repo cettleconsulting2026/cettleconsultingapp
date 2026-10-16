@@ -25,7 +25,6 @@ type Person = {
 const READ_MORE_BAR = "linear-gradient(90deg, #1b2a4a 0%, #91bc0d 55%, #b5e61d 100%)";
 
 
-
 const TEAM: Person[] = [
   {
     id: "charles-ebereonwu",
@@ -80,7 +79,7 @@ const TEAM: Person[] = [
 function PortraitCard({ person }: { person: Person }) {
   return (
     <article className="grid w-full grid-cols-[minmax(118px,42%)_1fr] overflow-hidden bg-navy sm:block sm:w-52.5">
-      <div className="relative min-h-[156px] sm:aspect-[11/10] sm:min-h-0">
+      <div className="relative min-h-39 sm:aspect-[11/10] sm:min-h-0">
         <Image
           src={person.image}
           alt={person.alt}
